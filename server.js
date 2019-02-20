@@ -70,6 +70,10 @@ app.get('/bad', (req, res) => res.send({
     errorMessage: 'Bad request'
 }));
 
+app.get('/projects', (req, res) => res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+}));
+
 
 // Start the express app
 app.listen(port, () => console.log(`Example app listening on port ${port}!`)); 
